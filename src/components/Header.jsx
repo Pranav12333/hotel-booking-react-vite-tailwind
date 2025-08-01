@@ -1,8 +1,8 @@
 import { useRoomContext } from '../context/RoomContext';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { LogoWhite } from '../assets'; // SVG Logo
-import { LogoDark } from '../assets'; // SVG Logo
+import { Link, useLocation } from 'react-router-dom';
+import { LogoWhite } from '../assets';
+import { LogoDark } from '../assets';
 
 
 const Header = () => {
@@ -10,14 +10,25 @@ const Header = () => {
   const { resetRoomFilterData } = useRoomContext();
 
   const [header, setHeader] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
-    window.addEventListener('scroll', () =>
-      window.scrollY > 50
-        ? setHeader(true)
-        : setHeader(false)
-    );
-  });
+    const handleScroll = () => {
+      // make header dark for scrolled or rooms page
+      if (window.scrollY > 50 || location.pathname === '/rooms') {
+        setHeader(true);
+      } else {
+        setHeader(false);
+      }
+    };
+
+    handleScroll();
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [location.pathname]);
 
   const navLinks = ['Home', 'Rooms', 'Restaurant', 'Spa', 'Contact'];
 
@@ -33,8 +44,8 @@ const Header = () => {
         <Link to="/" onClick={resetRoomFilterData}>
           {
             header
-              ? <LogoDark className='w-[160px]' /> //<img className='w-[160px]' src={LogoDark} />
-              : <LogoWhite className='w-[160px]' /> //<img className='w-[160px]' src={LogoWhite} />
+              ? <LogoDark className='w-[160px]' />
+              : <LogoWhite className='w-[160px]' />
           }
         </Link>
 

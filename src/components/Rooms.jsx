@@ -1,6 +1,8 @@
 import { useRoomContext } from '../context/RoomContext';
 import { SpinnerDotted } from 'spinners-react';
 import { Room } from '.';
+import ScrollToTop from '../utils/ScrollToTop';
+<ScrollToTop />
 
 
 const Rooms = () => {
