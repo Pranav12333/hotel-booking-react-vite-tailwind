@@ -1,6 +1,26 @@
-# Hotel Booking - ReactVite TailwindCSS Fundamental Project 3
+# Hotel Booking - ReactVite TailwindCSS Project by Pranav Parmar
 
-<img width="1200" alt="Screenshot 2024-09-13 at 00 01 03" src="https://github.com/user-attachments/assets/51070abc-f3ae-47ef-8bc1-e17151f075da"> ![Screenshot 2024-09-13 at 00 08 31](https://github.com/user-attachments/assets/5b984db0-c8c0-4a9a-bc25-543d30586225) <img width="1200" alt="Screenshot 2024-09-13 at 00 03 29" src="https://github.com/user-attachments/assets/4e1a4f30-ab6a-492a-8607-68963542f151"> ![Screenshot 2024-09-13 at 00 08 53](https://github.com/user-attachments/assets/edbabe77-1879-477d-8711-30bf245ff5b7)
+<img width="1200" alt="Screenshot 2024-09-13 at 00 01 03" src="https://github.com/user-attachments/assets/51070abc-f3ae-47ef-8bc1-e17151f075da">  
+![Screenshot 2024-09-13 at 00 08 31](https://github.com/user-attachments/assets/5b984db0-c8c0-4a9a-bc25-543d30586225)  
+<img width="1200" alt="Screenshot 2024-09-13 at 00 03 29" src="https://github.com/user-attachments/assets/4e1a4f30-ab6a-492a-8607-68963542f151">  
+![Screenshot 2024-09-13 at 00 08 53](https://github.com/user-attachments/assets/edbabe77-1879-477d-8711-30bf245ff5b7)
+
+---
+
+## Project Summary
+
+**HotelBooking** is a modern, responsive hotel booking frontend website built by **Pranav Parmar** using [React](https://react.dev/), [Vite](https://vitejs.dev/), and [TailwindCSS](https://tailwindcss.com/). This project demonstrates core React concepts (components, context API, hooks), advanced UI/UX with custom components, mobile responsiveness, and clean design — ideal for portfolios or real hotel sites.
+
+- **Live Demo:** [https://hotel-booking-pranav.netlify.app](https://hotel-booking-pranav.netlify.app) *(Replace with your actual Netlify link)*
+
+---
+
+## How to Run / Usage Instructions
+
+### 1. **Clone the Repository**
+```bash
+git clone https://github.com/Pranav12333/HotelBooking--React-Tailwind-Vite.git
+cd HotelBooking--React-Tailwind-Vite
 
 ---
 
